@@ -1,7 +1,7 @@
-import {FlatList, Pressable, ScrollView, StyleSheet, Text, View} from "react-native";
+import {FlatList, Pressable, StyleSheet, Text, View} from "react-native";
 import cart from "../data/cart";
 import CartListItem from "../components/CartListItem";
-const shoppingcart = () => {
+const Shoppingcart = () => {
 
     const ShoppingCartTotals = () => (
         <View style={styles.totalContainer}>
@@ -78,4 +78,4 @@ const styles = StyleSheet.create(
 
         },
     });
-export  default  shoppingcart;
+export  default Shoppingcart;

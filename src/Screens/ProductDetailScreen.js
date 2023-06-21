@@ -6,7 +6,6 @@ const ProductDetailScreen = () => {
 const {width} = useWindowDimensions();
 
 const addTocart = () => {
-console.warn('add ti cart');
     };
     return(
         <View>
@@ -57,7 +56,6 @@ const styles = StyleSheet.create(
         price : {
             fontSize: 16,
             fontWeight: '500',
-            letterSpacing: 1.5,
         },
         description: {
             fontSize: 18,
