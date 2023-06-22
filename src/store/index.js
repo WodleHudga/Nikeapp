@@ -1,0 +1,12 @@
+import React from 'react';
+import {configureStore} from "@reduxjs/toolkit";
+import {ProductSlice} from "./ProductSlice";
+
+export const store = configureStore({
+    reducer: {
+        products : ProductSlice.reducer,
+
+
+    }
+});
+//export default Index;
