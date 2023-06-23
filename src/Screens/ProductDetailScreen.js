@@ -79,8 +79,12 @@ const styles = StyleSheet.create(
             borderRadius: 100,
             justifyContent: 'center',
             alignItems: 'center',
+            transition: "all 100ms ease",
+            transform: "scale(1.05)",
+            boxShadow: "0 0 8px rgba(0, 0, 0, 0.5)"
 
-        },
+
+    },
         ButtonText: {
             color: 'white',
             fontWeight: '500',
