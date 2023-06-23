@@ -6,10 +6,14 @@ import ProductScreen from "./Screens/ProductScreen";
 import ProductDetailScreen from "./Screens/ProductDetailScreen";
 import Shoppingcart from "./Screens/Shoppingcart";
 import {Pressable, Text} from "react-native";
+import {selectNumberOfItems} from "./store/cartSlice";
+import {useSelector} from "react-redux";
 
 
 const Stack = createNativeStackNavigator();
 const Navigation = () => {
+
+    const numberofItems = useSelector(selectNumberOfItems);
     return (
      <NavigationContainer>
          <Stack.Navigator screenOptions={{contentStyle: {backgroundColor: 'white'}}}>
@@ -23,7 +27,7 @@ const Navigation = () => {
                                        size={18} color="grey" />
                                    <Text
                                        style={{marginLeft: 5, fontWeight: '500'}}>
-                                       1
+                                       {numberofItems}
                                    </Text>
                                </Pressable>
 
